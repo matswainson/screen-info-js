@@ -3,3 +3,14 @@
 # screen-info.js
 
 JavaScript detection of device screen size, orientation & pixel density.
+
+### How to use
+
+`window.screenInfo` provides information on:
+
+- height
+- maxTouchPoints
+- orientation
+- pixelDensity
+- retinaDisplay
+- width
