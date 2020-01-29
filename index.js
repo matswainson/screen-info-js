@@ -1,15 +1,17 @@
-;(function(window, undefined){
+module.exports = function (){
 
-	var screenInfo = window ? window.screen ? window.screen : null : null;
+	var screenInfo = typeof window === 'object' && window && window.screen,
+			screen = {
+				height: undefined,
+				width: undefined
+			};
 
 	if (!screenInfo) {
-		return null;
+		return screen;
 	}
 
-	var screen = {
-		height: screenInfo.height,
-		width: screenInfo.width
-	};
+	screen.height = screenInfo.height;
+	screen.width = screenInfo.width;
 
 	screen.orientation = (screen.height < screen.width) ? 'landscape' : 'portrait';
 
@@ -22,7 +24,6 @@
 		screen.maxTouchPoints = window.navigator.maxTouchPoints;
 	}
 	
-	console.log('screenInfo:', screen);
-	window.screenInfo = screen;
+	return screen;
 
-})(window);
+}();

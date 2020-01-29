@@ -1,0 +1,29 @@
+{
+  "name": "screen-info-js",
+  "version": "1.0.0",
+  "description": "JavaScript detection of device screen size, orientation & pixel density",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matswainson/screen-info-js.git"
+  },
+  "keywords": [
+    "screen",
+    "info",
+    "screen info",
+    "pixel density",
+    "touch points"
+  ],
+  "author": "Mat Swainson <mat@matswainson.com> (http://matswainson.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matswainson/screen-info-js/issues"
+  },
+  "homepage": "https://github.com/matswainson/screen-info-js#readme",
+  "devDependencies": {
+    "mocha": "^7.0.1"
+  }
+}

@@ -4,9 +4,23 @@
 
 JavaScript detection of device screen size, orientation & pixel density.
 
-### How to use
+### Example
 
-`window.screenInfo` provides information on:
+```js
+var screenInfo = require('screen-info-js');
+
+/* {
+  ...
+  maxTouchPoints: 5,
+  orientation: 'landscape'
+  ...
+} */
+
+console.log(screenInfo.maxTouchPoints); // 5
+console.log(screenInfo.orientation); // landscape
+```
+
+`screenInfo` provides information on:
 
 - height
 - maxTouchPoints
