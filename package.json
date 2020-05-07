@@ -1,6 +1,6 @@
 {
   "name": "screen-info-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript detection of device screen size, orientation & pixel density",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/matswainson/screen-info-js#readme",
   "devDependencies": {
-    "mocha": "^7.0.1"
+    "mocha": "^7.1.2"
   }
 }
